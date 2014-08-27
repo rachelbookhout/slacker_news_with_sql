@@ -1,0 +1,154 @@
+#wrapper {
+  max-width: 980px;
+  width: 85%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 0px;
+
+
+}
+#body_style{
+  margin-top: -20px;
+  background-color: #f6f6ef;
+
+}
+#navbar {
+
+  display: inline-block;
+  line-height: 12pt;
+  width: 100%;
+  background-color: #ff6600;
+}
+
+.logo {
+  display: inline-block;
+  border: 1px #ffffff solid;
+  margin-top: 3px;
+  margin-left: 3px;
+  width: 18px;
+  height: 18px;
+}
+
+.navbar-links {
+  display: inline-block;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+  line-height: 12pt;
+}
+
+.navbar-links > li {
+  border-left: 1px solid black;
+  padding-left: 5px;
+}
+
+.navbar-links > li:first-child,
+.navbar-links > li:nth-child(2)  {
+  border: none;
+}
+
+.navbar-links:link {
+  color: #000000;
+  text-decoration: none;
+  float: left;
+}
+
+.navbar-links:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+.inline-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.navbar-links-right {
+  display: inline-block;
+  margin-top: 4px;
+  float: right;
+}
+
+
+.inline-list > li {
+  display: inline-block;
+}
+
+#slacker_news {
+font-weight: bold;
+
+}
+
+p {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 5px;
+}
+
+.arrow {
+  margin-bottom: 2px;
+}
+.body_text {
+  font-size: 10pt;
+  color: #828282;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.body_link {
+  color: #000000;
+
+}
+
+.body_link:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.body_link:visited {
+  color: #828282;
+  text-decoration: none;
+}
+
+.body_lower_data {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 7pt;
+  color: #828282;
+  margin-left: 35px;
+}
+
+.body_lower_data:link {
+  color: #828282;
+  text-decoration: none;
+  margin:auto;
+
+}
+
+.body_lower_data:visited {
+  color: #828282;
+  text-decoration: none;
+  margin:auto;
+}
+
+.body_div {
+  margin-top: 5px;
+
+
+}
+.body_description {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 9pt;
+  color: #414141;
+  margin-left: 48px;
+
+}
+.comment_header {
+  color: #828282;
+  font-size: 8pt;
+}
+
+.comment_body {
+  margin-top: 10px;
+  margin-bottom: 3px;
+  margin-left: 0px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 9pt;
+  list-style-type: none;
+}

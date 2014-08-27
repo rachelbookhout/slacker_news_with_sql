@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Submit an Article</title>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <form action="/submit" method="post">
+    <label for="post_title"></label>
+    <div><input type="text" style="width: 333px" id="poster" name="poster" value="<%=@poster%>"placeholder="Your name"/></div>
+    <div><input type="text" style="width: 333px" id="post_title" name="post_title" value="<%=@post_title%>"placeholder="Post title"/></div>
+    <div>
+      <input type="text" style="width: 333px" id="post_url" name="post_url" value="<%=@post_url%>" placeholder="url..."/>
+    </div>
+    <div>
+      <textarea type="text" id="post_description" name="post_description" rows="6" cols="60" placeholder="Description..."><%=@post_description %></textarea>
+    </div>
+    <input type="submit" value="Submit Article"/>
+  </form>
+</html>

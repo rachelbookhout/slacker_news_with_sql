@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= @title || 'Slacker News' %></title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="navbar">
+        <nav>
+
+            <img class="logo" src="/images/y18.gif"></a>
+          <ul class="navbar-links navbar-links-right inline-list">
+            <li><a class = "navbar-links" href="/">login</a></li>
+          </ul>
+
+          <ul class="navbar-links inline-list">
+            <li><a class = "navbar-links" id="slacker_news" href="/">Slacker News</a></li>
+            <li><a class = "navbar-links" href="/">new</a></li>
+            <li><a class = "navbar-links" href="/">comments</a></li>
+
+            <li><a class = "navbar-links" href="/submit">submit</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    <div id="body_style">
+      <div style="margin:30px"></div>
+      <div>
+        <%if @error %>
+          <%= @error %>
+          <%end%>
+      </div>
+      <%=yield%>
+    </div>
+  </body>
+</html>

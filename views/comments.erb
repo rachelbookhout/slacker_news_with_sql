@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slacker News</title>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+        <div>
+          <p class="body_text"><img class="arrow" src="/images/grayarrow.gif"><a class="body_link" > <%= @article_info[0]["name"]%> </a><%= @article_info[0]["url"]%></p>
+          <p class="body_lower_data" style="margin-left:20px" >0 points by <%= @article_info[0]["poster"]%> created <%= @article_info[0]["time_created"]%><a class="body_lower_data" href="comments.html"><%= @comments ? @comments.count : 0%></a></p>
+        </div>
+        <form action="/articles/<%=@post_id%>/comments" method="post">
+          <label for="post_title"></label>
+          <div><input type="text" style="width: 333px" id="poster" name="poster" value="<%=@poster%>"placeholder="Your name"/></div>
+          <div><input type="text" style="width: 333px" id="post_title" name="post_title" value="<%=@post_title%>" placeholder="Post title"/></div>
+          <div>
+            <textarea type="text" id="comment_body" name="comment_body" rows="6" cols="60" placeholder="Description..."><%=@comment_body %></textarea>
+          </div>
+          <input type="submit" value="Submit Comment"/>
+        </form>
+        <div style="margin-top:40px">
+        <ul class="comment_body">
+          <%@comments.each do |comment|%>
+            <li><a class="comment_header"><img class="arrow" src="/images/grayarrow.gif"> <%= comment["poster"]%> created <%= comment["time_created"]%></a>
+            <h3><%= comment["title"]%></h3>
+             <p class="comment_body"><%= comment["comment_body"]%></p>
+              </li>
+              <%end%>
+              </ul></div>
+</html>

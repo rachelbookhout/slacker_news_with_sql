@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slacker News</title>
+
+  </head>
+    <% @articles.each_with_index do |article, i| %>
+      <div class= "body_div">
+        <p class="body_text"><%=i+1%>. <img class="arrow" src="images/grayarrow.gif"><a class="body_link" href="<%= article["url"]%>"> <%=article["name"]%> </a>(<%=article["url"]%>)</p>
+        <p class="body_description"> <%=article[:description]%></p>
+        <p class="body_lower_data">63 points by <a> <%=article["poster"]%></a> 56 minutes ago | <a class="body_lower_data" href="/articles/<%=article["id"]%>/comments">17 comments</a></p>
+      </div>
+
+    <%end%>
+
+</html>
